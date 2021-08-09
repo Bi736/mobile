@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6,div,span,section,a,p,body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient( rgba(2, 86, 253, 0.6),rgba(4, 87, 255, 0.6) ),url(./image/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+   align-items: stretch;
+}
+.menu{
+
+}
+.menu ul{list-style: none;
+
+}
+.menu ul li{display: inline-block;
+    padding: 0 20px;
+   margin-top: 15px;
+}
+.menu ul li a{text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.menu ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+   background-color: rgb(189, 6, 6);
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+.menu ul li:hover::after{
+    width: 100%;
+
+}
+
+.text-box{
+    width: 80%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   text-align: center;
+   transform: translate(-50%,-50%);
+}
+
+.text-box h1{
+    font-size: 62px;
+    font-we.ight: 600;
+    color: white;
+    word-spacign: 10px;
+}
+
+.text-box p{
+    margin-top: 20px;
+    font-size: 22px;
+    color: white;
+    font-weight: 500;
+    line-height: 30px;
+}
+.text-box a{
+    margin-top: 25px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.hero-btn{
+    text-decoration: none;
+    color:white;
+    border: 2px solid black;
+    font-size: 13px;
+    padding: 12px 35px;
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.hero-btn:hover{
+border: 2px solid white;
+background-color: rgb(252, 6, 6);
+color: white;
+transition: .5s;
+}
+
+.menu .fa{
+    display: none;
+}
+.header .bar{
+    display: none;
+}
+
+
+
+
+/*---course---*/
+
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.course h1{
+    font-size: 42px;
+    font-weight: 900;
+    word-spacing: 6px;
+}
+.course p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 15px;
+    color: rgb(14, 141, 14);
+}
+
+.row{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col{margin-top: 5px;
+    flex-basis: 31%;
+    background-color: rgba(248, 135, 135,.2);
+    border: 1px solid black;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    transition: .5s;
+
+}
+.course-col:hover{
+    box-shadow: 0 0 25px 0 rgba(0,0,0,0.6);
+}
+.course-col h3{text-align: center;
+    font-size: 25px;
+
+}
+.course-col p{text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+
+}
+
+/*---campus---*/
+.campus{
+    text-align: center;
+    padding-top: 40px;
+    width: 80%;
+    margin: auto;
+    
+}
+.campus h1{font-size: 50PX;
+    font-weight: 800;
+
+}
+.campus P{text-align: center;
+    margin-top: 30PX;
+    font-weight: 500;
+
+}
+
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 15px;
+   margin-top: 30px;
+   position: relative;
+   overflow: hidden;
+}
+.campus-col img{
+   height: 70%;
+   border-radius: 20px;
+   display: block;
+  
+}
+.campus-pic{
+    display: flex;
+   justify-content: space-between;
+   
+}
+.layer{
+    background: transparent;
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .8s;
+}
+.layer:hover{
+    background:rgba(250, 4, 4,.5) ;
+    height: 70%;
+}
+.layer h3{
+    color: white;
+    width: 100%;
+    font-weight: 500;
+    font-size: 30px;
+    transform: translatex(-50%);
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+.layer:hover h3{
+    bottom: 50%;
+    opacity: 1;
+}
+
+
+/*---facilities---*/
+
+.facilities{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    display: block;
+    position: relative;
+    bottom: 150px;
+}
+.facilities h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.facilities-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 15px;
+}
+.facilities-col h3{
+margin-top: 20px;
+font-weight: 600;
+font-size: 25px;
+}
+.facilities-col p{margin-top: 30px;
+    line-height: 25px;
+
+}
+
+
+/*---testimonial---*/
+
+.testimonial{width: 80%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+.testimonial h1{font-size: 60px;
+    font-weight: 600;
+
+}
+.testimonial p{margin-top: 30px;
+    font-size: 23px;
+    font-weight: 500;
+
+}
+
+.testimonial-col{
+    flex-basis: 43%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background-color: rgba(241, 94, 68,.2);
+    box-sizing: border-box;
+    padding: 25px;
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+}
+.testimonial-col img{
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+.testimonial-col p{font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-left: 15px;
+
+}
+.testimonial-col h3{margin-top: 10px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.star i{display: inline-block;
+    text-align: right;
+    color: goldenrod;
+    margin-top: 8px;
+}
+
+
+/*---call to action---*/
+
+.cta{margin: auto;
+    text-align: center;
+    width: 80%;
+    position: relative;
+    bottom: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./image/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 150px 0;
+
+}
+
+.cta h1{font-size: 40px;
+    color: white;
+    margin-bottom: 40px;
+    padding: ;
+}
+
+
+/*---footer---*/
+
+.footer{margin: auto;
+    width: 80%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+font-size: 30px;
+}
+.footer p{
+    margin-top: 15px;
+}
+.icons{display: flex;
+   
+}
+.icons i{display: block;
+    text-align: center;
+    margin: auto;
+    
+}
+.icons i {
+    display: block;
+    text-align: center;
+    margin: 15px;
+    font-size: 25px;
+    color: blue;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+}
